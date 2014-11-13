@@ -1,0 +1,16 @@
+apply plugin: 'java'
+
+jar {
+    version  '1.0'
+    baseName 'demo_api_test'
+    extension '.jar'
+}
+
+dependencies {
+    testCompile 'com.jayway.restassured:rest-assured:2.3.4'
+}
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
