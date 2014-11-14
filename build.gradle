@@ -7,10 +7,12 @@ jar {
 }
 
 dependencies {
+    testCompile 'org.testng:testng:6.8.8'
     testCompile 'com.jayway.restassured:rest-assured:2.3.4'
 }
 
 repositories {
+    maven { url 'http://mirrors.ibiblio.org/maven2' }
     mavenCentral()
     mavenLocal()
 }
